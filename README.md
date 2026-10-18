@@ -23,4 +23,8 @@ This is a work in progress, not a claim of a completed1.0 release. Physical iPho
 
 ## GitHub Pages
 
-Settings → Pages → Deploy from a branch → main → /(root). `.nojekyll` serves the distribution as ordinary static files. The website is public; Android signing keys, APK files, SDKs and local development reports are not part of this repository.
+Settings → Pages → Deploy from a branch → main → /(root). `.nojekyll` serves the distribution as ordinary static files. The website is public; Android signing keys, SDKs and local development reports are not part of this repository. The downloads/ folder contains only the explicitly published signed APK and its checksum.
+
+## Android download
+
+The site also offers the original signed Android APK59 (0.1.0-origin), 6,059,004 bytes, under downloads/. It is distinct from browser build60 and has not been rebuilt or re-signed. SHA-256: 266cd31d86f1d6f559949a832cf389e14d819152abbed9b0bec1a66ccddda7ba. Browser and Android progress are stored separately.
