@@ -1,40 +1,29 @@
-# Carrier · browser portfolio demo
+# Carrier · playable portfolio
 
-**Play (English):** https://sotlose.github.io/Carrier-web/?lang=en
+**[Play in English](https://sotlose.github.io/Carrier-web/?lang=en)** · **[Играть по-русски](https://sotlose.github.io/Carrier-web/?lang=ru)**
 
-**Русская версия:** https://sotlose.github.io/Carrier-web/?lang=ru
+An experimental music-reactive exploration game by Sotlose: procedural particle structures, free flight, rhythm-sensitive combat and Rebirth. This repository contains the browser distribution and visitor page.
 
-An experimental music-reactive exploration game. Procedural particle structures, free flight, rhythm-sensitive combat and rebirth. This repository contains the browser distribution and its visitor page.
+## Play and download · build61
 
-## Start
+- Browser: quick flight or optional guided training. Choose the built-in track, a local audio file, or enter without music.
+- **[Android APK61 · RU / EN](downloads/Carrier-0.1.0-origin-61-SIGNED.apk)** — 0.1.0-origin, com.carrier.mobile, signed with the original app certificate. 6,087,815 bytes. SHA-256: c2fb54f9ab3cab0b178e28d6faa791c2180eba69554aa728e515684e251b846f. [Checksum file](downloads/Carrier-0.1.0-origin-61-SIGNED.apk.sha256).
+- **[PC61 · RU / EN](downloads/Carrier-PC-0.1.0-origin-61.zip)** — unzip all files and run START-Carrier.cmd on Windows. Keep the local server window open. No Node.js or Python install needed.
 
-Open the site and choose **Открыть демо** for a quick flight, or **Пройти обучение** for the guided introduction. Choose the bundled track, a local audio file, or enter without music. Audio does not start automatically. Local files are processed in the browser, not uploaded.
+Choose RU or EN on the page, on the game's opening screen, or in Settings. In-game switching is live and preserves progress. Training, skills, story messages, saves, HUD and experimental editors support conversational American English.
 
-- Desktop: WASD + mouse; LMB fire/charge; E boost near matter; R rebirth/fusion; Q higher rebirth; C view; Esc release cursor; F fullscreen.
-- Touch: left movement area, right look/fire gestures; guided training explains charge and rebirth.
-- Save progress is stored locally in this browser. Desktop and touch share the same save format.
-- Capturing other applications' audio depends on browser/OS support. A local track or bundled music works without capture permissions.
+APK61 was verified for certificate, package/version, all seven assets, DEX and alignment. Physical Android installation/update and audio capture have not been tested. The previous signed APK59 remains at its original download URL.
 
-## Build
+## Controls and data
 
-Browser build61, based on Android/desktop59 with duplicate fragment registration fixed in build60 and RU / American English added in build61. Experiments remain optional and disabled by default. The current signed Android APK was not replaced.
+Desktop: WASD + mouse; LMB fire/charge; E boost near matter; R Rebirth/Fusion; Q Higher Rebirth; C view; Esc free cursor; F fullscreen. Touch: left stick for movement, right side for look/fire; training explains the gestures.
 
-`index.html`, `portfolio.css`, `portfolio.js`: project presentation. `desktop.html` and `touch.html`: appropriate input adapters over the same simulation. Remaining scripts handle persistence, training and optional experiments. `build-info.json` identifies the distribution.
+Music starts only after user input. Local audio files stay on the device. Audio capture support depends on browser/OS. Progress and preferences use browser-local storage; APK, localhost PC and public website progress are separate. No backend or analytics is included. The game requests Google Fonts with a system fallback.
 
-This is a work in progress, not a claim of a completed1.0 release. Physical iPhone/iPad testing is pending. The website uses Canvas2D, Web Audio and browser-local storage; no backend or analytics is included. The game currently requests Google Fonts with a system-font fallback.
+## Distribution
 
-## GitHub Pages
+Browser61 includes the build60 duplicate-fragment fix and build61 RU / American English localization. Experiments are optional and off by default. This is a work in progress, not a completed1.0 release. Physical iPhone/iPad testing is pending.
 
-Settings → Pages → Deploy from a branch → main → /(root). `.nojekyll` serves the distribution as ordinary static files. The website is public; Android signing keys, SDKs and local development reports are not part of this repository. The downloads/ folder contains only the explicitly published signed APK and its checksum.
+index.html / portfolio.css / portfolio.js present the project; portfolio-locales.js contains site-only download copy. desktop.html and touch.html use the same simulation with appropriate controls. Shared localization scripts match the signed game's assets; changing the website download label does not modify the game.
 
-## Android download
-
-The site also offers the original signed Android APK59 (0.1.0-origin), 6,059,004 bytes, under downloads/. It is distinct from browser build60 and has not been rebuilt or re-signed. SHA-256: 266cd31d86f1d6f559949a832cf389e14d819152abbed9b0bec1a66ccddda7ba. Browser and Android progress are stored separately.
-
-## RU / American English · build61
-
-Choose RU or EN in the page header, on the game opening screen, or in Settings. Switching in the game is live and preserves progress. Training, skills, story messages, saves and the experimental editor are localized. The selected language persists in this browser.
-
-**PC download:** [Carrier PC61 · RU / EN](downloads/Carrier-PC-0.1.0-origin-61.zip). Unzip all files and run START-Carrier.cmd on Windows; no Node or Python install needed. Keep the local server window open. Both locale scripts are included.
-
-Android RU / EN build61 is prepared for local signing; the public APK remains the original signed Russian build59 until signing is verified. The website labels this explicitly. No unsigned APK or signing material is published.
+GitHub Pages: Deploy from branch → main → /(root). .nojekyll serves static files. Only explicitly published application downloads and checksums are included; no signing keys, credentials, SDKs, unsigned APKs or development reports are published. No open-source license is assigned automatically.
