@@ -1,6 +1,8 @@
 # Carrier · browser portfolio demo
 
-**Play:** https://sotlose.github.io/Carrier-web/
+**Play (English):** https://sotlose.github.io/Carrier-web/?lang=en
+
+**Русская версия:** https://sotlose.github.io/Carrier-web/?lang=ru
 
 An experimental music-reactive exploration game. Procedural particle structures, free flight, rhythm-sensitive combat and rebirth. This repository contains the browser distribution and its visitor page.
 
@@ -15,7 +17,7 @@ Open the site and choose **Открыть демо** for a quick flight, or **П
 
 ## Build
 
-Browser build60, based on Android/desktop59 with duplicate fragment registration fixed in the shared source. Experiments remain optional and disabled by default. The current signed Android APK was not replaced.
+Browser build61, based on Android/desktop59 with duplicate fragment registration fixed in build60 and RU / American English added in build61. Experiments remain optional and disabled by default. The current signed Android APK was not replaced.
 
 `index.html`, `portfolio.css`, `portfolio.js`: project presentation. `desktop.html` and `touch.html`: appropriate input adapters over the same simulation. Remaining scripts handle persistence, training and optional experiments. `build-info.json` identifies the distribution.
 
@@ -28,3 +30,11 @@ Settings → Pages → Deploy from a branch → main → /(root). `.nojekyll` se
 ## Android download
 
 The site also offers the original signed Android APK59 (0.1.0-origin), 6,059,004 bytes, under downloads/. It is distinct from browser build60 and has not been rebuilt or re-signed. SHA-256: 266cd31d86f1d6f559949a832cf389e14d819152abbed9b0bec1a66ccddda7ba. Browser and Android progress are stored separately.
+
+## RU / American English · build61
+
+Choose RU or EN in the page header, on the game opening screen, or in Settings. Switching in the game is live and preserves progress. Training, skills, story messages, saves and the experimental editor are localized. The selected language persists in this browser.
+
+**PC download:** [Carrier PC61 · RU / EN](downloads/Carrier-PC-0.1.0-origin-61.zip). Unzip all files and run START-Carrier.cmd on Windows; no Node or Python install needed. Keep the local server window open. Both locale scripts are included.
+
+Android RU / EN build61 is prepared for local signing; the public APK remains the original signed Russian build59 until signing is verified. The website labels this explicitly. No unsigned APK or signing material is published.

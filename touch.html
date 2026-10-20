@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<script src="carrier-locales.js"></script>
+<script src="carrier-i18n.js"></script>
 <title>Carrier</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1380,7 +1382,7 @@
   </div>
 </div>
 
-<script id="carrierBuildMetadata" type="application/json">{"name":"0.1.0-origin","code":60,"channel":"release","saveSchema":1,"settingsSchema":1,"mode":"release","platform":"web-touch","builtAt":null,"commit":null}</script>
+<script id="carrierBuildMetadata" type="application/json">{"name":"0.1.0-origin","code":61,"channel":"release","saveSchema":1,"settingsSchema":1,"mode":"release","platform":"web-touch","builtAt":null,"commit":null}</script>
 <script src="carrier-persistence.js"></script><script>
 (()=>{if(new URLSearchParams(location.search).get('visit')!=='1')return;try{const P=window.CarrierPersistence;if(P.Storage.loadSave('auto'))return;const save=JSON.parse(JSON.stringify(P.DEFAULT_SAVE));save.meta={createdAt:Date.now(),updatedAt:Date.now(),gameVersion:'web',reason:'portfolio-quickstart'};P.Storage.saveGame('auto',save);}catch(_){} })();
 </script>
@@ -21303,7 +21305,7 @@ window.CarrierIcons=(()=>{
       const s=readSave(i),row=document.createElement('div');row.className='saveRow';
       const title=document.createElement('strong');title.textContent=i?'Слот '+i:'Автосохранение';row.appendChild(title);
       const info=document.createElement('small');info.textContent=s?
-        `${new Date(s.meta.updatedAt).toLocaleString('ru-RU')} · доставлено ${s.progress.deliveries} · ${s.progress.finalPhase===5?'Свободный режим':s.progress.quest?.stage===1?'послание у Курьера':label(s.meta.reason)}`:'Пусто';
+        `${new Date(s.meta.updatedAt).toLocaleString(window.CarrierI18n?.locale||'ru-RU')} · доставлено ${s.progress.deliveries} · ${s.progress.finalPhase===5?'Свободный режим':s.progress.quest?.stage===1?'послание у Курьера':label(s.meta.reason)}`:'Пусто';
       row.appendChild(info);
       const buttons=document.createElement('div');row.appendChild(buttons);
       const make=(name,handler,disabled=false)=>{const b=document.createElement('button');b.textContent=name;b.disabled=disabled;b.addEventListener('click',handler);buttons.appendChild(b)};

@@ -1,13 +1,13 @@
 {
   "appVersion": "0.1.0-origin",
-  "build": 60,
+  "build": 61,
   "sourceBaseBuild": 59,
   "kind": "portfolio-web",
   "saveSchema": 1,
   "settingsSchema": 1,
   "changes": [
-    "Unique fragment registration",
-    "Desktop and touch entries",
-    "Visitor start and optional training"
+    "Russian and American English in-game language switch",
+    "Shared desktop, touch and Android localization",
+    "Localized onboarding, editor, missions and saves"
   ]
 }
